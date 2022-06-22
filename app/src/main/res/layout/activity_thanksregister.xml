@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    tools:context=".thanksregister">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="0dp"
+        android:text="Thanks for Register....!!!!"
+        android:textColor="#573434"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/happiness" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView"
+        android:layout_alignRight="@id/imageView"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="-59dp"
+        app:srcCompat="@drawable/happiness" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView"
+        android:layout_alignRight="@id/imageView2"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="-59dp"
+        app:srcCompat="@drawable/happiness" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_marginLeft="60dp"
+        android:text="Please Wait...."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+</RelativeLayout>
+
+
+
+
+
+<!--
+
+apply plugin: 'com.android.application'
+
+// Add this line
+apply plugin: 'com.google.gms.google-services'
+
+
+dependencies {
+  // Import the Firebase BoM
+  implementation platform('com.google.firebase:firebase-bom:30.1.0')
+
+
+  // Add the dependency for the Firebase SDK for Google Analytics
+  // When using the BoM, don't specify versions in Firebase dependencies
+  implementation 'com.google.firebase:firebase-analytics'
+
+
+  // Add the dependencies for any other desired Firebase products
+  // https://firebase.google.com/docs/android/setup#available-libraries
+}
+-->
+
+<!--
+buildscript {
+  repositories {
+    // Check that you have the following line (if not, add it):
+    google()  // Google's Maven repository
+
+  }
+  dependencies {
+    ...
+    // Add this line
+    classpath 'com.google.gms:google-services:4.3.10'
+
+  }
+}
+
+allprojects {
+  ...
+  repositories {
+    // Check that you have the following line (if not, add it):
+    google()  // Google's Maven repository
+
+    ...
+  }
+}
+-->
